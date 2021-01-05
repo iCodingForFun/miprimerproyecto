@@ -1,0 +1,102 @@
+/*vinos*/
+.timelinee {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	font-family: 'Philosopher', sans-serif;
+	color: #F5FFFA;
+	font-size: 22px;
+}
+
+.timelinee::before {
+	position: absolute;
+	content: "";
+	display: block;
+	width: 0.4rem;
+	height: 100%;
+	background: #c9ada7;
+	z-index: 1;
+}
+
+.itemm {
+	display: grid;
+	grid-template-columns: 1fr min-content 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: "content-left image content-right";
+	align-items: center;
+	position: relative;
+	z-index: 2;
+}
+
+.itemm + .itemm {
+	margin-top: 4rem;
+}
+
+.wrapp {
+	grid-area: content-left;
+	padding: 1rem;
+	max-width: 25rem;
+}
+
+.itemm:nth-child(even) .wrapp {
+	grid-area: content-right;
+}
+
+.imgg {
+	width: 15rem;
+	height: 15rem;
+	background: #4a4e69;
+	border: 0.5rem solid #9a8c98;
+	border-radius: 50%;
+	grid-area: image;
+	overflow: hidden;
+}
+
+.imgg > .imgg {
+	width: 100%;
+	height: auto;
+}
+
+
+
+.probando img{
+    object-fit: cover;
+    height: 400px;
+    width: 449.2px;
+}
+/*vinos*/
+
+
+.fondo{
+	position: relative;
+	display: inline-block;
+}
+
+.texto1{
+	position: absolute;
+	top: 1px;
+	left: 10%;
+	font-size: 95px;
+	font-family: 'Great Vibes', cursive;
+	color: #F5FFFA;
+}
+
+.atras{
+	position: absolute;
+}
+
+/*barra de navegación*/
+
+.navbar{
+    font-size: 26px;
+    background-color: #C27BA0;
+}
+
+.nav-item{
+    color: black;
+    font-family: 'Philosopher', sans-serif;
+}
+
+/*barra de navegación*/
+
