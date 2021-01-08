@@ -1,4 +1,30 @@
-/*vinos*/
+header{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.content-wrapper img{
+	width: 100%;
+	height: 100%;
+}
+
+.text-wrapper{
+	width: 100%;
+	position: relative;
+	margin-top: -45%;
+}
+
+.text-wrapper h1{
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	color: #F5FFFA;
+	font-size: 12vw;
+}
+
+
+
+
 .timelinee {
 	display: flex;
 	flex-direction: column;
@@ -7,6 +33,7 @@
 	font-family: 'Philosopher', sans-serif;
 	color: #F5FFFA;
 	font-size: 22px;
+	background-image: url(../images/pexels-eva-elijas-6166013.jpg);
 }
 
 .timelinee::before {
@@ -58,33 +85,7 @@
 	height: auto;
 }
 
-
-
-.probando img{
-    object-fit: cover;
-    height: 400px;
-    width: 449.2px;
-}
-/*vinos*/
-
-
-.fondo{
-	position: relative;
-	display: inline-block;
-}
-
-.texto1{
-	position: absolute;
-	top: 1px;
-	left: 10%;
-	font-size: 95px;
-	font-family: 'Great Vibes', cursive;
-	color: #F5FFFA;
-}
-
-.atras{
-	position: absolute;
-}
+/*Timeline*/
 
 /*barra de navegación*/
 
@@ -100,3 +101,29 @@
 
 /*barra de navegación*/
 
+/*3 imágenes*/
+
+ul {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  li {
+	height: 45vh;
+	flex-grow: 1;
+  }
+  
+  li:last-child {
+	 
+	flex-grow: 10;
+  }
+  
+  .tres{
+	max-height: 100%;
+	min-width: 100%;
+	object-fit: cover;
+	vertical-align: bottom;
+  }
+ 
+  /*3 imágenes*/
+  
