@@ -85,10 +85,10 @@ animation: gradient 2.5s ease infinite;
 box-sizing: border-box;
 }
 
-/*barra de navegación*/
+/* navbar */
 
 .navbar{
-	font-size: 26px;
+	font-size: 21.1px;
 	background-color: #C27BA0;
   }
   
@@ -97,4 +97,4 @@ box-sizing: border-box;
 	font-family: 'Philosopher', sans-serif;
   }
   
-  /*barra de navegación*/
+  /* navbar */

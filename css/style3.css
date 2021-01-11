@@ -1,17 +1,17 @@
-@charset "UTF-8";
-/*barra de navegación*/
+
+/* navbar */
 
 .navbar{
-  font-size: 26px;
-  background-color: #C27BA0;
-}
-
-.nav-item{
-  color: black;
-  font-family: 'Philosopher', sans-serif;
-}
-
-/*barra de navegación*/
+	font-size: 21.1px;
+	background-color: #C27BA0;
+  }
+  
+  .nav-item{
+	color: black;
+	font-family: 'Philosopher', sans-serif;
+  }
+  
+  /* navbar */
 body {
   color: #272727;
   font-family: "Quicksand", serif;

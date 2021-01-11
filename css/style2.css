@@ -1,3 +1,4 @@
+/*Imagen Grande Con Texto*/
 header{
 	width: 100%;
 	height: auto;
@@ -22,8 +23,9 @@ header{
 	font-size: 12vw;
 }
 
+/*Imagen Grande Con Texto*/
 
-
+/*Timeline*/
 
 .timelinee {
 	display: flex;
@@ -87,25 +89,26 @@ header{
 
 /*Timeline*/
 
-/*barra de navegación*/
+/* navbar */
 
 .navbar{
-    font-size: 26px;
-    background-color: #C27BA0;
-}
-
-.nav-item{
-    color: black;
-    font-family: 'Philosopher', sans-serif;
-}
-
-/*barra de navegación*/
+	font-size: 21.1px;
+	background-color: #C27BA0;
+  }
+  
+  .nav-item{
+	color: black;
+	font-family: 'Philosopher', sans-serif;
+  }
+  
+  /* navbar */
 
 /*3 imágenes*/
 
 ul {
 	display: flex;
 	flex-wrap: wrap;
+	margin-bottom: 0;
   }
   
   li {
@@ -114,8 +117,7 @@ ul {
   }
   
   li:last-child {
-	 
-	flex-grow: 10;
+	 flex-grow: 10;
   }
   
   .tres{

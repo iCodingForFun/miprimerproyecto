@@ -1,82 +1,217 @@
+/*Lineas Moradas*/
+
 .letraBlanca{
-    color: #F0FFF0;
-    background-color: #741b47;
-    font-size: 20px;
-    font-family: 'Great Vibes', cursive;
-    font-weight: 0;
-    padding: 10px 10px;
-    text-align: center;
-    
+  color: #F0FFF0;
+  background-color: #741b47;
+  font-size: 20px;
+  font-family: 'Great Vibes', cursive;
+  font-weight: 0;
+  padding: 10px 10px;
+  text-align: center;
+  
 }
 
-.letraGris1{
-    display: inline-block;
+.letraBlanca a{
+  color: #F0FFF0;
+  text-decoration: none;
 }
 
-.letraGris1__titulos{
-    font-family: 'Old Standard TT', serif;
-    color: rgb(0, 0, 0);
-    display: inline-block;
-    
+.letraBlanca a:hover{
+    color: rgb(88, 0, 62);
+   text-decoration:none; 
+   cursor:pointer;  
 }
 
-.letraGris1__parrafos{
-    font-family: 'Old Standard TT', serif;
-    color: rgb(143, 58, 58);
-    display: inline-block;
-    width: 850px;
-    
+.blockk{
+  display: inline-block;
 }
 
- .letraGris1__imagenGrande{
-    width: 400px; height: 330px;
-    float: left;
-}  
-
-.letraGris__imagenGrande-chica{
-    width: 75px; height: 75px;
-    float: left;
-
-}
-
-
-.letraGris2{
-    font-family: 'Old Standard TT', serif;
-    color: #777;
-}
+/*Lineas Moradas*/
 
 /* navbar */
 
 .navbar{
-    font-size: 26px;
-    background-color: #C27BA0;
+  font-size: 21.1px;
+  background-color: #C27BA0;
 }
 
 .nav-item{
-    color: black;
-    font-family: 'Philosopher', sans-serif;
+  color: black;
+  font-family: 'Philosopher', sans-serif;
 }
 
 /* navbar */
 
+/*Timeline*/
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
 
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
 
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.07rem;
+  font-weight: normal;
+}
 
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-bottom: 1px solid #fff;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 0;
+  font-family: "Philosopher", sans-serif;
+}
 
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
 
+/*# sourceMappingURL=style.css.map */
+/*Timeline*/
+ 
+/* Titulo Imagen Principal */
+.contenedor{
+  position: relative;
+  display: inline-block;
+}
 
+.texto-encima h1{
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    font-family: 'Merriweather', serif;
+    
+    font-size: 60px;
+    color: rgb(255, 0, 76);
+    color: #C27BA0;
+  }
 
+  .texto-encimaa h1{
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    font-family: 'Merriweather', cursive;
+    
+    font-size: 60px;
+    color: rgb(255, 0, 76);
+    color: #C27BA0;
+  }
 
+@media (min-width:768px){
+  .texto-encimaa h1 {
+    font-size: 150px;
+  }
+} 
 
+@media (min-width:768px){
+  .texto-encima h1 {
+    font-size: 150px;
+  }
+} 
+/* Titulo Imagen Principal */
 
+/*Experto En Vinos*/
+#circle-shape-example { 
+  font-family: 'Amiri', serif;
+}
+#circle-shape-example p { 
+  line-height: 1.5; 
+  font-family: 'Amiri', serif;
+  font-size: 26px;
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+}
 
+#circle-shape-example .curvee { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: right;
+  margin-right:2rem; 
+}
 
-
-
-
-
-
-
-
-
-
+/*Experto En Vinos*/
