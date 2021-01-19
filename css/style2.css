@@ -1,3 +1,17 @@
+/* navbar */
+
+.navbar{
+	font-size: 21.1px;
+	background-color: #C27BA0;
+  }
+  
+  .nav-item{
+	color: black;
+	font-family: 'Philosopher', sans-serif;
+  }
+  
+  /* navbar */
+
 /*Imagen Grande Con Texto*/
 header{
 	width: 100%;
@@ -35,7 +49,8 @@ header{
 	font-family: 'Philosopher', sans-serif;
 	color: #F5FFFA;
 	font-size: 22px;
-	background-image: url(../images/pexels-eva-elijas-6166013.jpg);
+	background-image: url(../images/pexels-eva-elijas-6166013\ \(1\).jpg);
+	font-weight: 900;
 }
 
 .timelinee::before {
@@ -87,50 +102,28 @@ header{
 	height: auto;
 }
 
+@media screen and (min-width:200px) and (max-width:440px){
+	.imgg {
+	  width: 8.5rem;
+	  height: 8.5rem;
+	}
+  }
+
+  @media screen and (min-width:200px) and (max-width:440px){
+	.timelinee {
+	  font-size: 13px;
+	}
+  }
+
+  @media screen and (min-width:200px) and (max-width:440px){
+	.titlee {
+	  font-size: 12px;
+	}
+  }
 /*Timeline*/
 
-/* navbar */
-
-.navbar{
-	font-size: 21.1px;
-	background-color: #C27BA0;
-  }
-  
-  .nav-item{
-	color: black;
-	font-family: 'Philosopher', sans-serif;
-  }
-  
-  /* navbar */
-
-/*3 imágenes*/
-
-ul {
-	display: flex;
-	flex-wrap: wrap;
-	margin-bottom: 0;
-  }
-  
-  li {
-	height: 45vh;
-	flex-grow: 1;
-  }
-  
-  li:last-child {
-	 flex-grow: 10;
-  }
-  
-  .tres{
-	max-height: 100%;
-	min-width: 100%;
-	object-fit: cover;
-	vertical-align: bottom;
-  }
-
-  /*3 imágenes*/
-  
-  /*Footer*/
-  .footer {
+/*Footer*/
+.footer{
 	background-color: #414141;
 	width: 100%;
 	text-align: left;
@@ -139,20 +132,13 @@ ul {
 	font-size: 16px;
 	padding: 50px;
 	margin-top: 50px;
-  }
+}
   
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
+.footer .footer-left, .footer .footer-center, .footer .footer-right{
 	display: inline-block;
 	vertical-align: top;
-  }
+}
   
-  
-  /*Footer*/
-
-
-
 .footer-distributed{
 	background: #C27BA0;
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -160,33 +146,29 @@ ul {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-  padding: 20px 50px;
-  display: inline-block;
+	padding: 20px 50px;
+	display: inline-block;
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
 	display: inline-block;
 	vertical-align: top;
 }
 
-/* Footer left */
+/*Footer izq*/
 
 .footer-distributed .footer-left{
 	width: 40%;
 }
 
-/* The company logo */
+/*logo*/
 
 .footer-distributed img{
 	width: 100px;
 	height: 100px;
 }
 
-
-
-/* Footer links */
+/*Footer links*/
 
 .footer-distributed .footer-links{
 	color:  black;
@@ -197,7 +179,7 @@ ul {
 .footer-distributed .footer-links a{
 	display:inline-block;
 	line-height: 1.8;
-  font-weight:400;
+  	font-weight:400;
 	text-decoration: none;
 	color:  inherit;
 	font-family: 'Philosopher', sans-serif;
@@ -211,7 +193,7 @@ ul {
 	margin: 0;
 }
 
-/* Footer Center */
+/* Footer Mid */
 
 .footer-distributed .footer-center{
 	width: 35%;
@@ -232,17 +214,17 @@ ul {
 
 .footer-distributed .footer-center i.fa-envelope{
 	font-size: 17px;
-  line-height: 38px;
+  	line-height: 38px;
 }
 
 .footer-distributed .footer-center p{
 	display: inline-block;
 	color: black;
-  font-weight:400;
+	font-weight:400;
 	vertical-align: middle;
-  margin:0;
-  font-family: 'Amiri', serif;
-  font-size: 20px;
+  	margin:0;
+  	font-family: 'Amiri', serif;
+  	font-size: 20px;
 }
 
 .footer-distributed .footer-center p span{
@@ -257,20 +239,20 @@ ul {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: black;
-  display: inline-block;
-  padding-right: 5px;
+  	content: "|";
+  	font-weight:300;
+	font-size: 20px;
+  	left: 0;
+  	color: black;
+  	display: inline-block;
+  	padding-right: 5px;
 }
 
 .footer-distributed .footer-links .link-1:before {
-  content: none;
+	content: none;
 }
 
-/* Footer Right */
+/* Footer Derecha */
 
 .footer-distributed .footer-right{
 	width: 20%;
@@ -278,8 +260,8 @@ ul {
 
 .footer-distributed .footer-company-about{
 	line-height: 20px;
-  color:  black;
-  font-family: 'Amiri', serif;
+  	color:  black;
+  	font-family: 'Amiri', serif;
 	font-size: 17px;
 	font-weight: normal;
 	margin: 0;
@@ -314,25 +296,21 @@ ul {
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px){
 
-@media (max-width: 880px) {
+.footer-distributed{
+	font: bold 14px sans-serif;
+}
 
-	.footer-distributed{
-		font: bold 14px sans-serif;
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right{
+	display: block;
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
 	}
 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-
-	.footer-distributed .footer-center i{
-		margin-left: 0;
+.footer-distributed .footer-center i{
+	margin-left: 0;
 	}
 
 }
